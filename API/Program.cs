@@ -6,6 +6,8 @@ using UserProfileBackend.Application.Validators;
 using UserProfileBackend.Application.Managers.User;
 using UserProfileBackend.Application.Managers.User.Implementation;
 using UserProfileBackend.Api.Middleware.Implementation;
+using UserProfileBackend.Api.Services.User;
+using UserProfileBackend.Api.Services.User.Implementation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -26,7 +28,13 @@ builder.Services.AddValidatorsFromAssemblyContaining<BaseModelValidator>();
 builder.Services.AddValidatorsFromAssemblyContaining<UserProfileValidator>();
 builder.Services.AddValidatorsFromAssemblyContaining<RoleValidator>();
 
+// Add Managers
 builder.Services.AddScoped<IUserProfileManager, UserProfileManager>();
+builder.Services.AddScoped<IRoleManager, RoleManager>();
+
+// Add Services
+builder.Services.AddScoped<IUserProfileService, UserProfileService>();
+builder.Services.AddScoped<IRoleService, RoleService>();
 
 var app = builder.Build();
 
