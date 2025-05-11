@@ -38,6 +38,9 @@ builder.Services.AddScoped<IRoleService, RoleService>();
 
 var app = builder.Build();
 
+app.UseRouting();
+app.MapControllers();
+
 // Configure swagger
 app.UseSwagger();
 app.UseSwaggerUI(c =>
