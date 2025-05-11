@@ -21,11 +21,17 @@ public abstract class BaseModel : IBaseModel
     [Key]
     public ulong Id { get; set; }
 
-    public Guid Guid { get; set; }
+    public Guid Guid { get; set; } 
 
     public DateTime CreatedOn { get; set; }
 
     public DateTime UpdatedOn { get; set; }
+
+    protected BaseModel()
+    {
+        CreatedOn = DateTime.UtcNow;
+        UpdatedOn = DateTime.UtcNow; // On creation, UpdatedOn is the same as CreatedOn
+    }
 
     /* These would additionally be added if I were to add user authentication */
 

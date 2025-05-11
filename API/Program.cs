@@ -1,5 +1,10 @@
 using Microsoft.EntityFrameworkCore;
 using UserProfileBackend.Application.Data;
+using FluentValidation;
+using FluentValidation.AspNetCore;
+using UserProfileBackend.Application.Validators;
+using UserProfileBackend.Application.Managers.User;
+using UserProfileBackend.Application.Managers.User.Implementation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -11,12 +16,23 @@ builder.Services.AddDbContext<AppDbContext>(options =>
         b => b.MigrationsAssembly("UserProfileBackendApplication"))
 );
 
+// Add controllers
+builder.Services.AddControllers();
+
+// Register FluentValidation
+builder.Services.AddFluentValidationAutoValidation(); // Enables automatic server-side validation
+builder.Services.AddValidatorsFromAssemblyContaining<BaseModelValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<UserProfileValidator>();
+builder.Services.AddValidatorsFromAssemblyContaining<RoleValidator>();
+
+builder.Services.AddScoped<IUserProfileManager, UserProfileManager>();
+
 var app = builder.Build();
 
+// Configure swagger
 app.UseSwagger();
 app.UseSwaggerUI(c =>
 {
-    // You can customize the Swagger UI endpoint here if needed
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "User Profile API V1");
 });
 
