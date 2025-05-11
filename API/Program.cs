@@ -5,6 +5,7 @@ using FluentValidation.AspNetCore;
 using UserProfileBackend.Application.Validators;
 using UserProfileBackend.Application.Managers.User;
 using UserProfileBackend.Application.Managers.User.Implementation;
+using UserProfileBackend.Api.Middleware.Implementation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -35,6 +36,8 @@ app.UseSwaggerUI(c =>
 {
     c.SwaggerEndpoint("/swagger/v1/swagger.json", "User Profile API V1");
 });
+
+app.UseExceptionHandler(options => options.UseMiddleware<ExceptionMiddleware>());
 
 app.UseHttpsRedirection();
 
