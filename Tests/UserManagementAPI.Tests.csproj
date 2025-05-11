@@ -4,7 +4,7 @@
     <TargetFramework>net9.0</TargetFramework>
     <Nullable>enable</Nullable>
     <ImplicitUsings>enable</ImplicitUsings>
-    <RootNamespace>UserProfileBackend.Tests</RootNamespace>
+    <RootNamespace>UserManagementAPI.Tests</RootNamespace>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>$(NoWarn);1591</NoWarn>
   </PropertyGroup>
@@ -27,6 +27,6 @@
 
   <ItemGroup>
     <!-- Reference the project you are testing -->
-    <ProjectReference Include="..\Application\UserProfileBackendApplication.csproj" /> 
+    <ProjectReference Include="..\Application\UserManagementAPI.Application.csproj" /> 
   </ItemGroup>
 </Project>

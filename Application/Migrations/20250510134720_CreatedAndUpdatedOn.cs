@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore.Migrations;
 
 #nullable disable
 
-namespace UserProfileBackend.Application.Migrations
+namespace UserManagementAPI.Application.Migrations
 {
     /// <inheritdoc />
     public partial class CreatedAndUpdatedOn : Migration

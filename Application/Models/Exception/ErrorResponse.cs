@@ -1,4 +1,4 @@
-namespace UserProfileBackend.Application.Models.Exception;
+namespace UserManagementAPI.Application.Models.Exception;
 
 public class ErrorResponse(string message, string type, object? payload = null)
 {

@@ -11,8 +11,8 @@ Write-Host "Migration Name: $MigrationName"
 Write-Host "-----------------------------------------------------"
 
 # Define project paths relative to the script location (solution root)
-$applicationProjectPath = ".\Application" # Or "UserProfileBackend.Application"
-$apiProjectPath = ".\API"                 # Or "UserProfileBackend.API"
+$applicationProjectPath = ".\Application" # Or "UserManagementAPI.Application"
+$apiProjectPath = ".\API"                 # Or "UserManagementAPI.API"
 
 # Step 1: Add Migration
 Write-Host ""

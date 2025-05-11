@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using UserProfileBackend.Application.Data;
-using UserProfileBackend.Application.Models.User;
+using UserManagementAPI.Application.Data;
+using UserManagementAPI.Application.Models.User;
 
-namespace UserProfileBackend.Application.Managers.User.Implementation;
+namespace UserManagementAPI.Application.Managers.User.Implementation;
 
 public class UserProfileManager(AppDbContext context) : IUserProfileManager
 {

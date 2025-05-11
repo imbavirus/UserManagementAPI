@@ -1,4 +1,4 @@
-namespace UserProfileBackend.Api.Middleware;
+namespace UserManagementAPI.Api.Middleware;
 
 /// <summary>
 /// Defines the exception middleware

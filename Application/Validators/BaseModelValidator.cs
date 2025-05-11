@@ -1,7 +1,7 @@
 using FluentValidation;
-using UserProfileBackend.Application.Models;
+using UserManagementAPI.Application.Models;
 
-namespace UserProfileBackend.Application.Validators;
+namespace UserManagementAPI.Application.Validators;
 
 public class BaseModelValidator : AbstractValidator<BaseModel>
 {

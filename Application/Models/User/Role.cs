@@ -1,6 +1,6 @@
 using System.ComponentModel.DataAnnotations;
 
-namespace UserProfileBackend.Application.Models.User;
+namespace UserManagementAPI.Application.Models.User;
 
 public interface IRole : IBaseModel
 {

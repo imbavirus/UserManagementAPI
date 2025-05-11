@@ -1,8 +1,8 @@
 using Microsoft.EntityFrameworkCore;
-using UserProfileBackend.Application.Models;
-using UserProfileBackend.Application.Models.User;
+using UserManagementAPI.Application.Models;
+using UserManagementAPI.Application.Models.User;
 
-namespace UserProfileBackend.Application.Data
+namespace UserManagementAPI.Application.Data
 {
 
     public class AppDbContext : DbContext

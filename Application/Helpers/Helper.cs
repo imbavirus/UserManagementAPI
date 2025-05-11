@@ -1,6 +1,6 @@
 using System.Text.Json;
 
-namespace UserProfileBackend.Application.Helpers;
+namespace UserManagementAPI.Application.Helpers;
 public static class Helper
 {
 

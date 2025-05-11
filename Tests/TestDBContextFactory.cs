@@ -1,8 +1,8 @@
 using Microsoft.Data.Sqlite;
 using Microsoft.EntityFrameworkCore;
-using UserProfileBackend.Application.Data;
+using UserManagementAPI.Application.Data;
 
-namespace UserProfileBackend.Tests;
+namespace UserManagementAPI.Tests;
 
 public class TestDbContextFactory : IDisposable
 {

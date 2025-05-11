@@ -1,13 +1,13 @@
 using Microsoft.EntityFrameworkCore;
-using UserProfileBackend.Application.Data;
+using UserManagementAPI.Application.Data;
 using FluentValidation;
 using FluentValidation.AspNetCore;
-using UserProfileBackend.Application.Validators;
-using UserProfileBackend.Application.Managers.User;
-using UserProfileBackend.Application.Managers.User.Implementation;
-using UserProfileBackend.Api.Middleware.Implementation;
-using UserProfileBackend.Api.Services.User;
-using UserProfileBackend.Api.Services.User.Implementation;
+using UserManagementAPI.Application.Validators;
+using UserManagementAPI.Application.Managers.User;
+using UserManagementAPI.Application.Managers.User.Implementation;
+using UserManagementAPI.Api.Middleware.Implementation;
+using UserManagementAPI.Api.Services.User;
+using UserManagementAPI.Api.Services.User.Implementation;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,7 +16,7 @@ builder.Services.AddSwaggerGen();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddDbContext<AppDbContext>(options =>
     options.UseSqlite(builder.Configuration.GetConnectionString("DefaultConnection") ?? "Data Source=userprofile.db",
-        b => b.MigrationsAssembly("UserProfileBackendApplication"))
+        b => b.MigrationsAssembly("UserManagementAPIApplication"))
 );
 
 // Add controllers

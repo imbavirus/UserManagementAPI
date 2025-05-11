@@ -4,11 +4,11 @@ using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
-using UserProfileBackend.Application.Data;
+using UserManagementAPI.Application.Data;
 
 #nullable disable
 
-namespace UserProfileBackend.Application.Migrations
+namespace UserManagementAPI.Application.Migrations
 {
     [DbContext(typeof(AppDbContext))]
     [Migration("20250510134720_CreatedAndUpdatedOn")]
@@ -20,7 +20,7 @@ namespace UserProfileBackend.Application.Migrations
 #pragma warning disable 612, 618
             modelBuilder.HasAnnotation("ProductVersion", "9.0.4");
 
-            modelBuilder.Entity("UserProfileBackend.Application.Models.User.Role", b =>
+            modelBuilder.Entity("UserManagementAPI.Application.Models.User.Role", b =>
                 {
                     b.Property<ulong>("Id")
                         .ValueGeneratedOnAdd()
@@ -70,7 +70,7 @@ namespace UserProfileBackend.Application.Migrations
                         });
                 });
 
-            modelBuilder.Entity("UserProfileBackend.Application.Models.User.UserProfile", b =>
+            modelBuilder.Entity("UserManagementAPI.Application.Models.User.UserProfile", b =>
                 {
                     b.Property<ulong>("Id")
                         .ValueGeneratedOnAdd()
@@ -110,9 +110,9 @@ namespace UserProfileBackend.Application.Migrations
                     b.ToTable("UserProfiles");
                 });
 
-            modelBuilder.Entity("UserProfileBackend.Application.Models.User.UserProfile", b =>
+            modelBuilder.Entity("UserManagementAPI.Application.Models.User.UserProfile", b =>
                 {
-                    b.HasOne("UserProfileBackend.Application.Models.User.Role", "Role")
+                    b.HasOne("UserManagementAPI.Application.Models.User.Role", "Role")
                         .WithMany()
                         .HasForeignKey("RoleId")
                         .OnDelete(DeleteBehavior.Cascade)

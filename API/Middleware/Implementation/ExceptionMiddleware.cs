@@ -1,9 +1,9 @@
-using UserProfileBackend.Application.Models.Exception;
+using UserManagementAPI.Application.Models.Exception;
 using Microsoft.AspNetCore.Diagnostics;
-using UserProfileBackend.Application.Helpers;
+using UserManagementAPI.Application.Helpers;
 using System.Text.Json;
 
-namespace UserProfileBackend.Api.Middleware.Implementation;
+namespace UserManagementAPI.Api.Middleware.Implementation;
 
 /// <summary>
 /// Middleware to handle exceptions globally, log them, and return a standardized error response.

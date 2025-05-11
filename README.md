@@ -1,2 +1,2 @@
-# UserProfileBackend
+# UserManagementAPI
 User Profile API

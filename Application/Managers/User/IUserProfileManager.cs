@@ -1,6 +1,6 @@
-using UserProfileBackend.Application.Models.User;
+using UserManagementAPI.Application.Models.User;
 
-namespace UserProfileBackend.Application.Managers.User;
+namespace UserManagementAPI.Application.Managers.User;
 
 public interface IUserProfileManager
 {

@@ -1,6 +1,6 @@
-using UserProfileBackend.Application.Models.User;
+using UserManagementAPI.Application.Models.User;
 
-namespace UserProfileBackend.Api.Services.User;
+namespace UserManagementAPI.Api.Services.User;
 
 public interface IRoleService
 {

@@ -1,9 +1,9 @@
 using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
-using UserProfileBackend.Application.Models.User;
+using UserManagementAPI.Application.Models.User;
 using Xunit;
 
-namespace UserProfileBackend.Tests.IntegrationTests;
+namespace UserManagementAPI.Tests.IntegrationTests;
 
 public class AppDbContextTests
 {

@@ -1,11 +1,11 @@
 using FluentAssertions;
 using Microsoft.EntityFrameworkCore;
-using UserProfileBackend.Application.Data;
-using UserProfileBackend.Application.Managers.User.Implementation;
-using UserProfileBackend.Application.Models.User;
+using UserManagementAPI.Application.Data;
+using UserManagementAPI.Application.Managers.User.Implementation;
+using UserManagementAPI.Application.Models.User;
 using Xunit;
 
-namespace UserProfileBackend.Tests.IntegrationTests;
+namespace UserManagementAPI.Tests.IntegrationTests;
 
 public class UserProfileManagerTests : IDisposable
 {

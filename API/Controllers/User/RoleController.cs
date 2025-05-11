@@ -1,8 +1,8 @@
 using Microsoft.AspNetCore.Mvc;
-using UserProfileBackend.Api.Services.User;
-using UserProfileBackend.Application.Models.User;
+using UserManagementAPI.Api.Services.User;
+using UserManagementAPI.Application.Models.User;
 
-namespace UserProfileBackend.Api.Controllers.User;
+namespace UserManagementAPI.Api.Controllers.User;
 
 [ApiController]
 [Route("api/[controller]")]

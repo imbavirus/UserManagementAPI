@@ -1,7 +1,7 @@
-using UserProfileBackend.Application.Managers.User;
-using UserProfileBackend.Application.Models.User;
+using UserManagementAPI.Application.Managers.User;
+using UserManagementAPI.Application.Models.User;
 
-namespace UserProfileBackend.Api.Services.User.Implementation;
+namespace UserManagementAPI.Api.Services.User.Implementation;
 
 public class RoleService(IRoleManager roleManager) : IRoleService
 {

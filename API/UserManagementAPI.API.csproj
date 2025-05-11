@@ -6,7 +6,7 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <GenerateDocumentationFile>true</GenerateDocumentationFile>
     <NoWarn>$(NoWarn);1591</NoWarn>
-    <RootNamespace>UserProfileBackend.API</RootNamespace>
+    <RootNamespace>UserManagementAPI.API</RootNamespace>
   </PropertyGroup>
 
   <ItemGroup>
@@ -20,7 +20,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Application\UserProfileBackendApplication.csproj" />
+    <ProjectReference Include="..\Application\UserManagementAPI.Application.csproj" />
   </ItemGroup>
 
 </Project>

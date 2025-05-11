@@ -2,7 +2,7 @@ using System.ComponentModel.DataAnnotations;
 using System.ComponentModel.DataAnnotations.Schema;
 
 
-namespace UserProfileBackend.Application.Models.User;
+namespace UserManagementAPI.Application.Models.User;
 public interface IUserProfile : IBaseModel
 {
     string Name { get; set; }
