@@ -16,7 +16,7 @@ public class RoleManagerTests
         _dbContextFactory = new TestDbContextFactory();
     }
 
-    private RoleManager CreateManager(AppDbContext context)
+    private static RoleManager CreateManager(AppDbContext context)
     {
         return new RoleManager(context);
     }
