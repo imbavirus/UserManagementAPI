@@ -28,11 +28,7 @@ Before you begin, ensure you have the following installed:
 - A code editor of your choice (e.g., [Visual Studio](https://visualstudio.microsoft.com/), [VS Code](https://code.visualstudio.com/)).
 - [Git](https://git-scm.com/)
 - (Optional) [SQLite Browser](https://sqlitebrowser.org/) or a similar tool for database inspection.
-- (Optional, if managing EF Core migrations from CLI) [.NET EF Core Tools](https://docs.microsoft.com/en-us/ef/core/cli/dotnet):
-
-  ```bash
-  dotnet tool install --global dotnet-ef
-  ```
+- (Optional, if managing EF Core migrations from CLI) [.NET EF Core Tools](https://docs.microsoft.com/en-us/ef/core/cli/dotnet)
 
 ## Getting Started
 
@@ -96,8 +92,7 @@ Alternatively use the provided run.ps1 script in powershell
 
 You can also run the project directly from Visual Studio (by opening the `.sln` file and pressing F5 or the "Start" button) or VS Code (using its launch configurations).
 
-By default, the API should be accessible at:
-- `http://localhost:5000`
+By default, the API should be accessible at `http://localhost:5000`
 
 ## Running Tests
 
