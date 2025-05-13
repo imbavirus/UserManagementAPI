@@ -64,6 +64,8 @@ Follow these steps to get the API up and running on your local machine.
        dotnet ef database update --project ./Application --startup-project ./API
        ```
 
+        Alternatively use the provided setup-database.ps1 script in powershell
+
    *   **Creating New Migrations (when making model changes):**
        If you make changes to your EF Core models (entities) that require database schema changes, you'll need to create a new migration.
        1.  Ensure your `DbContext` and entity changes are saved.
