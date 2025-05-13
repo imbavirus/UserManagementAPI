@@ -94,7 +94,7 @@ Alternatively use the provided run.ps1 script in powershell
 
 You can also run the project directly from Visual Studio (by opening the `.sln` file and pressing F5 or the "Start" button) or VS Code (using its launch configurations).
 
-By default, the API should be accessible at `http://localhost:5000`
+By default, the API should be accessible at `http://127.0.0.1:5000`
 
 ## Running Tests
 
@@ -111,7 +111,7 @@ This command will discover and run all test projects within the solution. Test r
 
 This API provides RESTful endpoints for managing user profiles and roles. Once the application is running, Swagger UI is available for interactive API documentation, exploration, and testing. Access it via your browser at:
 
-- `http://localhost:5000/swagger`
+- `http://127.0.0.1:5000/swagger`
 
 Available endpoints:
 - `GET /api/UserProfiles` - Retrieve all user profiles
@@ -132,7 +132,7 @@ This API serves as the backend for the UserManagementWeb frontend application.
 
 When setting up and running the frontend:
 - Ensure this UserManagementAPI is running and accessible.
-- Configure the frontend's `API_BASE_URL` environment variable to point to the address where this API is hosted (e.g., `http://localhost:5000`).
+- Configure the frontend's `API_BASE_URL` environment variable to point to the address where this API is hosted (e.g., `http://127.0.0.1:5000`).
 
 ## Previews
 

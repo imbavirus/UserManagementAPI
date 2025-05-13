@@ -52,6 +52,22 @@ builder.Services.AddCors(options =>
 
 var app = builder.Build();
 
+// Apply migrations at startup (creates DB and schema if they don't exist and migrations are set up)
+using (var scope = app.Services.CreateScope())
+{
+    var services = scope.ServiceProvider;
+    try
+    {
+        var dbContext = services.GetRequiredService<AppDbContext>();
+        dbContext.Database.Migrate(); // Applies pending migrations. Creates the database if it doesn't exist.
+    }
+    catch (Exception ex)
+    {
+        var logger = services.GetRequiredService<ILogger<Program>>();
+        logger.LogError(ex, "An error occurred while migrating or seeding the database.");
+    }
+}
+
 app.UseExceptionHandler(options => options.UseMiddleware<ExceptionMiddleware>());
 
 app.UseHttpsRedirection();
